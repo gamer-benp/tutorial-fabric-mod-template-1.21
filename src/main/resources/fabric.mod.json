@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialfabricmod",
+	"version": "${version}",
+	"name": "Tutorial Fabric Mod",
+	"description": "My mod to test making a fabric mod using the tutorial by Modding by Kaupenjoe",
+	"authors": [
+		"Ben.P"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorial-fabric-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.benp.tutorialmodfabric.TutorialFabricMod"
+		],
+		"fabric-datagen": [
+			"net.benp.tutorialmodfabric.TutorialFabricModDataGenerator"
+		],
+        "client": [
+          "net.benp.tutorialmodfabric.TutorialFabricModClient"
+        ]
+	},
+	"mixins": [
+		"tutorial-fabric-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
