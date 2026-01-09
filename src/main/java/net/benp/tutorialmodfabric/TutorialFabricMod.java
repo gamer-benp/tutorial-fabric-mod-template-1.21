@@ -1,5 +1,8 @@
 package net.benp.tutorialmodfabric;
 
+import net.benp.tutorialmodfabric.block.ModBlocks;
+import net.benp.tutorialmodfabric.item.ModItemGroups;
+import net.benp.tutorialmodfabric.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,9 @@ public class TutorialFabricMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItemGroups.registerItemGroups();
 
+        ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
